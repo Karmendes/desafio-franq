@@ -43,7 +43,7 @@ Responsável pela documentação dos dados, proprietários de tabelas e linhagen
 Scripts pythons fariam a extração dos dados podendo ser via web scrapping direto na fonte, ou usando api's de bases ja tratadas como no caso do cnpj, encontrado nesse [link](https://basedosdados.org/dataset/br-me-cnpj?bdm_table=empresas). Usando uma lógica simples, o script irá somente baixar o dado e transformar para uma extensão mais leve e colunas, como por exemplo o parquet.
 
 2. Armazenamento
-![S3](tools/s3.png =300x300)
+<img src="tools/s3.png" width="200">
 
 Com a extração feita pela camada anterior, poderíamos armazenar no S3, na qual proporciona um baixo orçamento e não há necessidade de gerenciar um banco de data warehouse. O S3 seria dividido em três partes:
 
