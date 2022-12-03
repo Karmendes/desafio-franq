@@ -38,7 +38,7 @@ Responsável pela documentação dos dados, proprietários de tabelas e linhagen
 
 1. Camadas de extração
 
-![Python](tools/python-logo-only.png =300x300)
+<img src="tools/python-logo-only.png" width="200">
 
 Scripts pythons fariam a extração dos dados podendo ser via web scrapping direto na fonte, ou usando api's de bases ja tratadas como no caso do cnpj, encontrado nesse [link](https://basedosdados.org/dataset/br-me-cnpj?bdm_table=empresas). Usando uma lógica simples, o script irá somente baixar o dado e transformar para uma extensão mais leve e colunas, como por exemplo o parquet.
 
@@ -53,26 +53,26 @@ Zona Trusted: Para criação e agregação de tabelas com regras de negócios
 
 3. Transformação
 
-![Athena](tools/athena.png)
-![DBT](tools/dbt.png)
+<img src="tools/athena.png" width="200">
+<img src="tools/dbt.png" width="200">
 
 Para que o dado transite da zona raw até a trusted, essas duas ferramentas fariam a parte de transformação. O DBT permite que você escreva, teste e documente através de arquivos SQL e yaml, no qual na minha opinião é mais acessível do que escrever em python. Como o DBT não tem acesso direto com o S3, instalaremos um plugin do athena, que é um serviço que nos dará a capacidade de ler o S3 como um banco SQL.
 
 4. Visualização
 
-![Metabase](tools/metabase.png)
+<img src="tools/metabase.png" width="200">
 
 Com os dados chegando na zona trusted, podemos ligar o metabase na base para podermos fazer nossas visualizações. Para isso também precisaremos instalar um plugin do athena no Metabase.
 
 5. Orquestração
 
-![Airflow](tools/airflow_transparent.png)
+<img src="tools/airflow_transparent.png" width="200">
 
 Para que todo esse pipeline seja gerenciado, podemos subir um aiflow para montarmos essas dags e assim poder controlar performance e possiveis quebras.
 
 6. Catalogação
 
-![Glue](tools/glue.jpeg)
+<img src="tools/glue.jpeg" width="200">
 
 Para que possamos usar o S3 como banco, usaremos a parte de catalogação do Glue para definição de tabelas e databases.
 
