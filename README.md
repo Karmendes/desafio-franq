@@ -36,6 +36,9 @@ Responsável pela documentação dos dados, proprietários de tabelas e linhagen
 
 # Visão de ferramentas da arquitetura
 
+![Ferramentas](ferramentas.png)
+
+
 1. Camadas de extração
 
 <img src="tools/python-logo-only.png" width="200">
