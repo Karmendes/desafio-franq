@@ -50,9 +50,11 @@ Scripts pythons fariam a extração dos dados podendo ser via web scrapping dire
 
 Com a extração feita pela camada anterior, poderíamos armazenar no S3, na qual proporciona um baixo orçamento e não há necessidade de gerenciar um banco de data warehouse. O S3 seria dividido em três partes:
 
-Zona Raw: Para armazenamento do dado Bruto
-Zona Processed: Para limpeza e normalização dos dados
-Zona Trusted: Para criação e agregação de tabelas com regras de negócios
+**Zona Raw**: Para armazenamento do dado Bruto
+
+**Zona Processed**: Para limpeza e normalização dos dados
+
+**Zona Trusted**: Para criação e agregação de tabelas com regras de negócios
 
 3. Transformação
 
